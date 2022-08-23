@@ -13,7 +13,7 @@ import Alamofire
 
 
 typealias Success<T : Codable> = (BaseResponse<T>) -> Void
-typealias Error = (BaseError) -> Void
+
 
 
 class NetworkManager: NetworkProtocol {
@@ -27,7 +27,7 @@ class NetworkManager: NetworkProtocol {
         path: NetworkPath,
         _ paramaters: [String: String]?,
         onSuccess: @escaping Success<T>,
-        onError: @escaping Error
+        onError:  BaseError
     ) {
         AF.request(networkRequestUrl(path),
             method: .get,
@@ -35,7 +35,7 @@ class NetworkManager: NetworkProtocol {
         ).validate().responseDecodable(of: T.self)
         { (response) in
             guard let model = response.value else {
-                onError(BaseError(response.error))
+                BaseError(response.error)
                 return
             }
             onSuccess(BaseResponse.init(model: model, message: ""))
@@ -46,6 +46,6 @@ class NetworkManager: NetworkProtocol {
 
 extension NetworkManager {
     func networkRequestUrl(_ path: NetworkPath) -> String {
-        return baseUrl + "/" + path.rawValue
+        return baseUrl
     }
 }
