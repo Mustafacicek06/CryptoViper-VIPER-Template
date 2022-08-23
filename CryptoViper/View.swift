@@ -14,7 +14,7 @@ import UIKit
 // View Controller
 
 protocol AnyView {
-    var present: AnyPresenter? {get set}
+    var presenter: AnyPresenter? {get set}
     
     // cryptos update or error update
     func update(with cryptos : [CryptoModel])
@@ -22,14 +22,15 @@ protocol AnyView {
 }
 
 class CryptoViewController: UIViewController {
-    var present: AnyPresenter?
+    var presenter: AnyPresenter?
     
     var cryptos: [CryptoModel] = []
     
     private let tableView: UITableView = {
         let table = UITableView()
         // custom class or self
-        table.register(UITableView.self, forCellReuseIdentifier: "cell")
+        table.register(UITableViewCell.self, forCellReuseIdentifier: "cell")
+        
         table.isHidden = true
         return table
     }()
@@ -41,7 +42,7 @@ class CryptoViewController: UIViewController {
         label.text = "Downloading..."
         
         label.font = UIFont.systemFont(ofSize: 20)
-        label.textColor = .blue
+        label.textColor = .white
         label.textAlignment = .center
         
         return label
@@ -50,7 +51,7 @@ class CryptoViewController: UIViewController {
     override func viewDidLoad() {
         super.viewDidLoad()
         
-        
+        view.backgroundColor = .blue
         view.addSubview(tableView)
         view.addSubview(messageLabel)
         
@@ -77,7 +78,12 @@ class CryptoViewController: UIViewController {
     }
     
     func update(with error: String) {
-        
+        DispatchQueue.main.async {
+            self.cryptos = []
+            self.tableView.isHidden = true
+            self.messageLabel.text = error
+            self.messageLabel.isHidden = false
+        }
     }
     
     
@@ -89,7 +95,14 @@ extension CryptoViewController: AnyView , UITableViewDelegate, UITableViewDataSo
     }
     
     func tableView(_ tableView: UITableView, cellForRowAt indexPath: IndexPath) -> UITableViewCell {
-        return UITableViewCell()
+        let cell = tableView.dequeueReusableCell(withIdentifier: "cell", for: indexPath)
+        var content = cell.defaultContentConfiguration()
+        content.text = cryptos[indexPath.row].price
+        content.secondaryText = cryptos[indexPath.row].currency
+        cell.contentConfiguration = content
+        cell.backgroundColor = .yellow
+        
+        return cell
     }
     
     
