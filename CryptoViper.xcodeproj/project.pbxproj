@@ -11,11 +11,14 @@
 		081F2A5128B4D0B8004B54D3 /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 081F2A5028B4D0B8004B54D3 /* SceneDelegate.swift */; };
 		081F2A5828B4D0B9004B54D3 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 081F2A5728B4D0B9004B54D3 /* Assets.xcassets */; };
 		081F2A5B28B4D0B9004B54D3 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 081F2A5928B4D0B9004B54D3 /* LaunchScreen.storyboard */; };
-		081F2A6328B4D12B004B54D3 /* View.swift in Sources */ = {isa = PBXBuildFile; fileRef = 081F2A6228B4D12B004B54D3 /* View.swift */; };
-		081F2A6528B4D136004B54D3 /* Interactor.swift in Sources */ = {isa = PBXBuildFile; fileRef = 081F2A6428B4D136004B54D3 /* Interactor.swift */; };
-		081F2A6728B4D143004B54D3 /* Presenter.swift in Sources */ = {isa = PBXBuildFile; fileRef = 081F2A6628B4D143004B54D3 /* Presenter.swift */; };
-		081F2A6928B4D14E004B54D3 /* Entity.swift in Sources */ = {isa = PBXBuildFile; fileRef = 081F2A6828B4D14E004B54D3 /* Entity.swift */; };
-		081F2A6B28B4D15B004B54D3 /* Router.swift in Sources */ = {isa = PBXBuildFile; fileRef = 081F2A6A28B4D15B004B54D3 /* Router.swift */; };
+		081F2A6328B4D12B004B54D3 /* CryptoView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 081F2A6228B4D12B004B54D3 /* CryptoView.swift */; };
+		081F2A6528B4D136004B54D3 /* CryptoInteractor.swift in Sources */ = {isa = PBXBuildFile; fileRef = 081F2A6428B4D136004B54D3 /* CryptoInteractor.swift */; };
+		081F2A6728B4D143004B54D3 /* CryptoPresenter.swift in Sources */ = {isa = PBXBuildFile; fileRef = 081F2A6628B4D143004B54D3 /* CryptoPresenter.swift */; };
+		081F2A6928B4D14E004B54D3 /* CryptoEntity.swift in Sources */ = {isa = PBXBuildFile; fileRef = 081F2A6828B4D14E004B54D3 /* CryptoEntity.swift */; };
+		081F2A6B28B4D15B004B54D3 /* CryptoRouter.swift in Sources */ = {isa = PBXBuildFile; fileRef = 081F2A6A28B4D15B004B54D3 /* CryptoRouter.swift */; };
+		082F39D428B563D200CD7327 /* NetworkManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = 082F39D328B563D200CD7327 /* NetworkManager.swift */; };
+		082F39D728B5642800CD7327 /* Alamofire in Frameworks */ = {isa = PBXBuildFile; productRef = 082F39D628B5642800CD7327 /* Alamofire */; };
+		082F39D928B5645E00CD7327 /* NetworkProtocol.swift in Sources */ = {isa = PBXBuildFile; fileRef = 082F39D828B5645E00CD7327 /* NetworkProtocol.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -25,11 +28,13 @@
 		081F2A5728B4D0B9004B54D3 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		081F2A5A28B4D0B9004B54D3 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		081F2A5C28B4D0B9004B54D3 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
-		081F2A6228B4D12B004B54D3 /* View.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = View.swift; sourceTree = "<group>"; };
-		081F2A6428B4D136004B54D3 /* Interactor.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Interactor.swift; sourceTree = "<group>"; };
-		081F2A6628B4D143004B54D3 /* Presenter.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Presenter.swift; sourceTree = "<group>"; };
-		081F2A6828B4D14E004B54D3 /* Entity.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Entity.swift; sourceTree = "<group>"; };
-		081F2A6A28B4D15B004B54D3 /* Router.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Router.swift; sourceTree = "<group>"; };
+		081F2A6228B4D12B004B54D3 /* CryptoView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CryptoView.swift; sourceTree = "<group>"; };
+		081F2A6428B4D136004B54D3 /* CryptoInteractor.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CryptoInteractor.swift; sourceTree = "<group>"; };
+		081F2A6628B4D143004B54D3 /* CryptoPresenter.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CryptoPresenter.swift; sourceTree = "<group>"; };
+		081F2A6828B4D14E004B54D3 /* CryptoEntity.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CryptoEntity.swift; sourceTree = "<group>"; };
+		081F2A6A28B4D15B004B54D3 /* CryptoRouter.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CryptoRouter.swift; sourceTree = "<group>"; };
+		082F39D328B563D200CD7327 /* NetworkManager.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NetworkManager.swift; sourceTree = "<group>"; };
+		082F39D828B5645E00CD7327 /* NetworkProtocol.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NetworkProtocol.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -37,6 +42,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				082F39D728B5642800CD7327 /* Alamofire in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -62,18 +68,60 @@
 		081F2A4D28B4D0B8004B54D3 /* CryptoViper */ = {
 			isa = PBXGroup;
 			children = (
+				082F39CF28B562C400CD7327 /* Modules */,
+				082F39CE28B562B300CD7327 /* Core */,
 				081F2A4E28B4D0B8004B54D3 /* AppDelegate.swift */,
 				081F2A5028B4D0B8004B54D3 /* SceneDelegate.swift */,
 				081F2A5728B4D0B9004B54D3 /* Assets.xcassets */,
 				081F2A5928B4D0B9004B54D3 /* LaunchScreen.storyboard */,
 				081F2A5C28B4D0B9004B54D3 /* Info.plist */,
-				081F2A6228B4D12B004B54D3 /* View.swift */,
-				081F2A6428B4D136004B54D3 /* Interactor.swift */,
-				081F2A6628B4D143004B54D3 /* Presenter.swift */,
-				081F2A6828B4D14E004B54D3 /* Entity.swift */,
-				081F2A6A28B4D15B004B54D3 /* Router.swift */,
 			);
 			path = CryptoViper;
+			sourceTree = "<group>";
+		};
+		082F39CE28B562B300CD7327 /* Core */ = {
+			isa = PBXGroup;
+			children = (
+				082F39D228B563BD00CD7327 /* Protocols */,
+				082F39D128B563AF00CD7327 /* Service */,
+			);
+			path = Core;
+			sourceTree = "<group>";
+		};
+		082F39CF28B562C400CD7327 /* Modules */ = {
+			isa = PBXGroup;
+			children = (
+				082F39D028B562E600CD7327 /* Crypto */,
+			);
+			path = Modules;
+			sourceTree = "<group>";
+		};
+		082F39D028B562E600CD7327 /* Crypto */ = {
+			isa = PBXGroup;
+			children = (
+				081F2A6228B4D12B004B54D3 /* CryptoView.swift */,
+				081F2A6428B4D136004B54D3 /* CryptoInteractor.swift */,
+				081F2A6628B4D143004B54D3 /* CryptoPresenter.swift */,
+				081F2A6828B4D14E004B54D3 /* CryptoEntity.swift */,
+				081F2A6A28B4D15B004B54D3 /* CryptoRouter.swift */,
+			);
+			path = Crypto;
+			sourceTree = "<group>";
+		};
+		082F39D128B563AF00CD7327 /* Service */ = {
+			isa = PBXGroup;
+			children = (
+				082F39D328B563D200CD7327 /* NetworkManager.swift */,
+			);
+			path = Service;
+			sourceTree = "<group>";
+		};
+		082F39D228B563BD00CD7327 /* Protocols */ = {
+			isa = PBXGroup;
+			children = (
+				082F39D828B5645E00CD7327 /* NetworkProtocol.swift */,
+			);
+			path = Protocols;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -92,6 +140,9 @@
 			dependencies = (
 			);
 			name = CryptoViper;
+			packageProductDependencies = (
+				082F39D628B5642800CD7327 /* Alamofire */,
+			);
 			productName = CryptoViper;
 			productReference = 081F2A4B28B4D0B8004B54D3 /* CryptoViper.app */;
 			productType = "com.apple.product-type.application";
@@ -120,6 +171,9 @@
 				Base,
 			);
 			mainGroup = 081F2A4228B4D0B8004B54D3;
+			packageReferences = (
+				082F39D528B5642800CD7327 /* XCRemoteSwiftPackageReference "Alamofire" */,
+			);
 			productRefGroup = 081F2A4C28B4D0B8004B54D3 /* Products */;
 			projectDirPath = "";
 			projectRoot = "";
@@ -146,11 +200,13 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				081F2A6B28B4D15B004B54D3 /* Router.swift in Sources */,
-				081F2A6728B4D143004B54D3 /* Presenter.swift in Sources */,
-				081F2A6328B4D12B004B54D3 /* View.swift in Sources */,
-				081F2A6928B4D14E004B54D3 /* Entity.swift in Sources */,
-				081F2A6528B4D136004B54D3 /* Interactor.swift in Sources */,
+				081F2A6B28B4D15B004B54D3 /* CryptoRouter.swift in Sources */,
+				081F2A6728B4D143004B54D3 /* CryptoPresenter.swift in Sources */,
+				081F2A6328B4D12B004B54D3 /* CryptoView.swift in Sources */,
+				081F2A6928B4D14E004B54D3 /* CryptoEntity.swift in Sources */,
+				082F39D428B563D200CD7327 /* NetworkManager.swift in Sources */,
+				082F39D928B5645E00CD7327 /* NetworkProtocol.swift in Sources */,
+				081F2A6528B4D136004B54D3 /* CryptoInteractor.swift in Sources */,
 				081F2A4F28B4D0B8004B54D3 /* AppDelegate.swift in Sources */,
 				081F2A5128B4D0B8004B54D3 /* SceneDelegate.swift in Sources */,
 			);
@@ -360,6 +416,25 @@
 			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
+
+/* Begin XCRemoteSwiftPackageReference section */
+		082F39D528B5642800CD7327 /* XCRemoteSwiftPackageReference "Alamofire" */ = {
+			isa = XCRemoteSwiftPackageReference;
+			repositoryURL = "https://github.com/Alamofire/Alamofire.git";
+			requirement = {
+				branch = master;
+				kind = branch;
+			};
+		};
+/* End XCRemoteSwiftPackageReference section */
+
+/* Begin XCSwiftPackageProductDependency section */
+		082F39D628B5642800CD7327 /* Alamofire */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = 082F39D528B5642800CD7327 /* XCRemoteSwiftPackageReference "Alamofire" */;
+			productName = Alamofire;
+		};
+/* End XCSwiftPackageProductDependency section */
 	};
 	rootObject = 081F2A4328B4D0B8004B54D3 /* Project object */;
 }
