@@ -5,7 +5,6 @@
 //  Created by Mustafa Çiçek on 23.08.2022.
 //
 
-import Foundation
 import UIKit
 
 
@@ -13,16 +12,9 @@ import UIKit
 // class, protocol
 // View Controller
 
-protocol AnyView {
-    var presenter: AnyPresenter? {get set}
-    
-    // cryptos update or error update
-    func update(with cryptos : [CryptoModel])
-    func update(with error: String)
-}
 
 class CryptoViewController: UIViewController {
-    var presenter: AnyPresenter?
+    var presenter: BasePresenter?
     
     var cryptos: [CryptoModel] = []
     

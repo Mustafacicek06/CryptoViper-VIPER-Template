@@ -16,25 +16,17 @@ enum NetworkError: Error {
     case parsingFailed
 }
 
-protocol AnyPresenter {
-    var router: AnyRouter? {get set}
-    var interactor: AnyInteractor? {get set}
-    var view: AnyView? {get set}
-    // view'a kendini güncellemesi gerektiğini belirtir
-    // Result başarılı ve başarısız durumuna göre istediğin case'e göre durum döndürebilirsin
-    func interactorDidDownloadCrypto (result: Result<[CryptoModel],Error>)
-}
 
-class CryptoPresenter: AnyPresenter {
-    var router: AnyRouter?
+class CryptoPresenter: BasePresenter {
+    var router: BaseRouter?
     
-    var interactor: AnyInteractor? {
+    var interactor: BaseInteractor? {
         didSet {
             interactor?.downloadCryptos()
         }
     }
     
-    var view: AnyView?
+    var view: BaseView?
     
     func interactorDidDownloadCrypto(result: Result<[CryptoModel], Error>) {
         switch result {

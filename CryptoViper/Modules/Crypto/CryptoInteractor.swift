@@ -12,14 +12,9 @@ import Foundation
 //
 
 
-protocol AnyInteractor {
-    var presenter: AnyPresenter? {get set}
-    
-    func downloadCryptos()
-}
 
-class CryptoInteractor: AnyInteractor {
-    var presenter: AnyPresenter?
+class CryptoInteractor: BaseInteractor {
+    var presenter: BasePresenter?
     
     func downloadCryptos() {
         let myApiKey = "ae00a59a93623c9005482d4d573310e67e4b1434"

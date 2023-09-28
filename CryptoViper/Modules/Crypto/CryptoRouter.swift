@@ -12,14 +12,9 @@ import UIKit
 // class, protocol
 
 // all entry point after that
-typealias EntryPoint = AnyView & UIViewController
 
-protocol AnyRouter {
-    var entry : EntryPoint? {get}
-    static func startExecution() -> AnyRouter
-}
 
-class CryptoRouter: AnyRouter {
+class CryptoRouter: BaseRouter {
     var entry: EntryPoint?
     
     

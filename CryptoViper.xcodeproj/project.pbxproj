@@ -23,6 +23,11 @@
 		082F39DF28B565A100CD7327 /* BaseResponse.swift in Sources */ = {isa = PBXBuildFile; fileRef = 082F39DE28B565A100CD7327 /* BaseResponse.swift */; };
 		082F39E228B5666500CD7327 /* NetworkConfig.swift in Sources */ = {isa = PBXBuildFile; fileRef = 082F39E128B5666500CD7327 /* NetworkConfig.swift */; };
 		082F39E528B566CF00CD7327 /* Path.swift in Sources */ = {isa = PBXBuildFile; fileRef = 082F39E428B566CF00CD7327 /* Path.swift */; };
+		59EC3CA62AC618BD00DEE67E /* BaseView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 59EC3CA52AC618BD00DEE67E /* BaseView.swift */; };
+		59EC3CA82AC618CD00DEE67E /* BaseInteractor.swift in Sources */ = {isa = PBXBuildFile; fileRef = 59EC3CA72AC618CD00DEE67E /* BaseInteractor.swift */; };
+		59EC3CAA2AC618DA00DEE67E /* BasePresenter.swift in Sources */ = {isa = PBXBuildFile; fileRef = 59EC3CA92AC618DA00DEE67E /* BasePresenter.swift */; };
+		59EC3CAC2AC618E300DEE67E /* BaseEntity.swift in Sources */ = {isa = PBXBuildFile; fileRef = 59EC3CAB2AC618E300DEE67E /* BaseEntity.swift */; };
+		59EC3CAE2AC618ED00DEE67E /* BaseRouter.swift in Sources */ = {isa = PBXBuildFile; fileRef = 59EC3CAD2AC618ED00DEE67E /* BaseRouter.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -43,6 +48,11 @@
 		082F39DE28B565A100CD7327 /* BaseResponse.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BaseResponse.swift; sourceTree = "<group>"; };
 		082F39E128B5666500CD7327 /* NetworkConfig.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NetworkConfig.swift; sourceTree = "<group>"; };
 		082F39E428B566CF00CD7327 /* Path.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Path.swift; sourceTree = "<group>"; };
+		59EC3CA52AC618BD00DEE67E /* BaseView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BaseView.swift; sourceTree = "<group>"; };
+		59EC3CA72AC618CD00DEE67E /* BaseInteractor.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BaseInteractor.swift; sourceTree = "<group>"; };
+		59EC3CA92AC618DA00DEE67E /* BasePresenter.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BasePresenter.swift; sourceTree = "<group>"; };
+		59EC3CAB2AC618E300DEE67E /* BaseEntity.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BaseEntity.swift; sourceTree = "<group>"; };
+		59EC3CAD2AC618ED00DEE67E /* BaseRouter.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BaseRouter.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -90,6 +100,7 @@
 		082F39CE28B562B300CD7327 /* Core */ = {
 			isa = PBXGroup;
 			children = (
+				59EC3CA32AC6189900DEE67E /* Common */,
 				082F39D128B563AF00CD7327 /* Service */,
 			);
 			path = Core;
@@ -158,6 +169,26 @@
 				082F39E428B566CF00CD7327 /* Path.swift */,
 			);
 			path = Enums;
+			sourceTree = "<group>";
+		};
+		59EC3CA32AC6189900DEE67E /* Common */ = {
+			isa = PBXGroup;
+			children = (
+				59EC3CA42AC618A200DEE67E /* BaseViper */,
+			);
+			path = Common;
+			sourceTree = "<group>";
+		};
+		59EC3CA42AC618A200DEE67E /* BaseViper */ = {
+			isa = PBXGroup;
+			children = (
+				59EC3CA52AC618BD00DEE67E /* BaseView.swift */,
+				59EC3CA72AC618CD00DEE67E /* BaseInteractor.swift */,
+				59EC3CA92AC618DA00DEE67E /* BasePresenter.swift */,
+				59EC3CAB2AC618E300DEE67E /* BaseEntity.swift */,
+				59EC3CAD2AC618ED00DEE67E /* BaseRouter.swift */,
+			);
+			path = BaseViper;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -237,6 +268,9 @@
 			buildActionMask = 2147483647;
 			files = (
 				081F2A6B28B4D15B004B54D3 /* CryptoRouter.swift in Sources */,
+				59EC3CAE2AC618ED00DEE67E /* BaseRouter.swift in Sources */,
+				59EC3CAC2AC618E300DEE67E /* BaseEntity.swift in Sources */,
+				59EC3CAA2AC618DA00DEE67E /* BasePresenter.swift in Sources */,
 				081F2A6728B4D143004B54D3 /* CryptoPresenter.swift in Sources */,
 				082F39E228B5666500CD7327 /* NetworkConfig.swift in Sources */,
 				081F2A6328B4D12B004B54D3 /* CryptoView.swift in Sources */,
@@ -247,6 +281,8 @@
 				081F2A4F28B4D0B8004B54D3 /* AppDelegate.swift in Sources */,
 				081F2A5128B4D0B8004B54D3 /* SceneDelegate.swift in Sources */,
 				082F39E528B566CF00CD7327 /* Path.swift in Sources */,
+				59EC3CA82AC618CD00DEE67E /* BaseInteractor.swift in Sources */,
+				59EC3CA62AC618BD00DEE67E /* BaseView.swift in Sources */,
 				082F39DF28B565A100CD7327 /* BaseResponse.swift in Sources */,
 				082F39DD28B5659300CD7327 /* AlamofireBaseError.swift in Sources */,
 			);
